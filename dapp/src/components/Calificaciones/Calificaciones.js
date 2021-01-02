@@ -35,3 +35,4 @@ const Calificaciones = (props) => (
 );
 
 export default Calificaciones;
+ 

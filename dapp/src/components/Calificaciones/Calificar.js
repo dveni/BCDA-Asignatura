@@ -1,7 +1,7 @@
 import {newContextComponents} from "@drizzle/react-components";
 const {ContractData, ContractForm} = newContextComponents;
 
-const Calificar = ({drizzle, drizzleState}) => <CalificarV3  drizzle={drizzle} drizzleState={drizzleState} />
+const Calificar = ({drizzle, drizzleState}) => <CalificarV1  drizzle={drizzle} drizzleState={drizzleState} />
 
 
 const CalificarV1 = ({drizzle, drizzleState}) => <article className="AppMisDatos">

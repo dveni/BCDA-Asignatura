@@ -10,6 +10,9 @@ const Header = props => (
                 drizzleState={props.drizzleState}
                 contract={"Asignatura"}
                 method={"nombre"}
+                render={data => (
+                    <em>{data}</em>
+                )}
             />
             -
             <ContractData
