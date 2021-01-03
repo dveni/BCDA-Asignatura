@@ -14,8 +14,8 @@ const Matricular = ({drizzle, drizzleState}) => <article className="AppMisDatos"
                 contract={"Asignatura"} method={"datosAlumno"} methodArgs={[address]}
                 render={({nombre, email}) => {
                 	// Si el nombre existe, no aparece el form.
-                	if (nombre !== '') {
-                          return <p></p>
+                	if (nombre) {
+                          return <p>Matriculado como {nombre} con email {email}</p>
                       }
                   	return <>
                   		<h3>Matricular</h3>

@@ -7,7 +7,7 @@ const NuevaEvaluacion = ({drizzle, drizzleState}) => <article className="AppMisD
                   contract={"Asignatura"} method={"profesor"} methodArgs={[]}
                   render={addr => {
                       if (addr !== drizzleState.accounts[0]) {
-                          return <p>"Para crear evaluaciones debes ser el profesor"</p>
+                          return <p>Para crear evaluaciones debes ser el profesor</p>
                       }
                       return <ContractForm drizzle={drizzle} drizzleState={drizzleState}
                                            contract="Asignatura" method="creaEvaluacion"
