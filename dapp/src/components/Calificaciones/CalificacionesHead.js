@@ -9,7 +9,7 @@ const CalificacionesHead = ({evaluacionesLength}) => {
     for (let i = 0; i < evaluacionesLength; i++) {
         thead.push(<th key={"chev-" + i}>E<sub>{i}</sub></th>);
     }
-
+    thead.push(<th key={"Final"}>Nota final</th>);
     return <thead>{thead}</thead>;
 };
 
